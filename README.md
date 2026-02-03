@@ -72,7 +72,7 @@ sudo apt update
 ** Debian bat fix:**
    `alias bat='batcat'`
 
-** After install:**
+**After install:**
    `chsh -s /bin/zsh`
    Log out and back in.
----------------------------------------------------------------
+**---------------------------------------------------------------
