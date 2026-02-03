@@ -75,4 +75,3 @@ sudo apt update
 **After install:**
    `chsh -s /bin/zsh`
    Log out and back in.
-**---------------------------------------------------------------
