@@ -5,7 +5,7 @@
  #  _ / /\__ \ | | | | | (__ 
  # (_)___|___/_| |_|_|  \___|
  # -----------------by iogirl
- # -------- github.com/iogirl ---------------------------------
+ # -------- github.com/iogirl/zshrc-config ----------------------
 
 export EDITOR=nvim
 export VISUAL=nvim
