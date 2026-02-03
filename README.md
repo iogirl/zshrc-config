@@ -8,11 +8,12 @@
  # -----------------by iogirl
  # -------- github.com/iogirl ---------------------------------
 ```
-# ------------------------------------------------------------
-# Required Packages for This ZSH Setup
-# ------------------------------------------------------------
 
-# --- ARCH LINUX ---------------------------------------------
+** Required Packages for This ZSH Setup**
+---------------------------------------------------------------
+
+** --- ARCH LINUX ---------------------------------------------**
+```
  sudo pacman -S \
    zsh \
    zsh-autosuggestions \
@@ -25,9 +26,10 @@
    ripgrep \
    ttf-jetbrains-mono-nerd \
    kitty
+```
 
-# ------------------------------------------------------------
-# --- FEDORA -------------------------------------------------
+** --- FEDORA -------------------------------------------------**
+```
  sudo dnf install \
    zsh \
    zsh-autosuggestions \
@@ -40,13 +42,13 @@
    ripgrep \
    kitty \
    jetbrains-mono-fonts
-
-# Optional (for Nerd Font icons):
- sudo dnf install nerd-fonts
-
-# ------------------------------------------------------------
-# --- DEBIAN / UBUNTU ----------------------------------------
- sudo apt update
+```
+** Optional (for Nerd Font icons):**
+ `sudo dnf install nerd-fonts`
+ 
+** --- DEBIAN / UBUNTU ----------------------------------------**
+ ```
+sudo apt update
  sudo apt install \
    zsh \
    zsh-autosuggestions \
@@ -55,22 +57,22 @@
    bat \
    ripgrep \
    kitty
+```
+---------------------------------------------------------------
+** Then install manually (recommended):**
+** Starship:**
+   `curl -sS https://starship.rs/install.sh | sh`
 
-# Then install manually (recommended):
-# Starship:
-   curl -sS https://starship.rs/install.sh | sh
+** Zoxide:**
+   `curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash`
 
-# Zoxide:
-   curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
-
-# eza (if not available in repo):
+** eza (if not available in repo):**
    Install from GitHub release binary.
 
-# Debian bat fix:
-   alias bat='batcat'
+** Debian bat fix:**
+   `alias bat='batcat'`
 
-# ------------------------------------------------------------
-# After install:
-   chsh -s /bin/zsh
+** After install:**
+   `chsh -s /bin/zsh`
    Log out and back in.
-# ------------------------------------------------------------
+---------------------------------------------------------------
