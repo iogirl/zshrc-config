@@ -1,16 +1,54 @@
 add_newline = false
-format = "$directory$git_branch$git_status$character"
+
+# --- COMPLETE (old) ------
+# old format = "$directory$git_branch$git_status$character"
+
+# [character]
+# old success_symbol = "[desk ❯](bold #8fd19e)"
+# error_symbol = "[❯](bold #d8b4fe)"
+
+# [directory]
+# style = "bold #0b0b0b on #8fd19e"
+# format = "[ $path ]($style) "
+
+# [git_branch]
+# style = "bold #a8e0c8"
+
+# [git_status]
+# style = "bold #d6f5d6"
+
+
+# --- RIGHT SIDE (new) ------
+format = """
+$directory\
+[@desk ](bold #8fd19e)\
+$shell\
+$git_branch\
+$git_status\
+$cmd_duration\
+$character
+"""
 
 [character]
-success_symbol = "[ws❯](bold #77DD77)"
-error_symbol = "[❯](bold red)"
+error_symbol = "[❯](bold #d8b4fe)"
 
 [directory]
-style = "bold black on #ff79c6"
+style = "bold #0b0b0b on #8fd19e"
 format = "[ $path ]($style) "
 
+
 [git_branch]
-style = "bold #bd93f9"
+style = "bold #a8e0c8"
 
 [git_status]
-style = "bold #f1fa8c"
+style = "bold #d6f5d6"
+
+[cmd_duration]
+min_time = 500
+format   = "[⏱ $duration](#afbbe3) "
+
+[time]
+disabled    = false
+time_format = "%H:%M"
+style       = "#d78caa"
+format      = "  $time "
